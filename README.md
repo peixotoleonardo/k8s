@@ -10,6 +10,9 @@
 
 ### Kind
 
+
+#### Create a cluster
+
 ```sh
 $ kind create cluster --config=kind.yml --name=k8s
 ```
