@@ -29,3 +29,13 @@ $ docker build -f .docker/Dockerfile -t k8s/hello-api .
 
 - -f: specify the docker file
 - -t: specify the name and optionally a tag
+
+#### Run a container
+
+```sh
+$ docker run --rm -d -p 8000:8000 k8s/hello-api:latest
+```
+
+- --rm: automatically remove the when it exits
+- -d: run the container in background
+- -p: publish a container's ports to the host
